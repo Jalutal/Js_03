@@ -1,7 +1,7 @@
 
 function Header() {
     return (
-        <div>
+        <header>
         <h1>Mon super Header qui déchire</h1>
         <nav>
             <ul>
@@ -10,7 +10,7 @@ function Header() {
                 <li>Contact</li>
             </ul>
         </nav>
-        </div>
+        </header>
     )
 }
 
