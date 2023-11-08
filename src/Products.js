@@ -10,7 +10,7 @@ function Products() {
         isPublished: true
     },
     {
-        title: "Chris de la Piscine",
+        title: "Chris de la Piscine (AKA Miaouss de Galar)",
         price: 40000,
         isPublished: true
     }
@@ -20,13 +20,22 @@ function Products() {
             {products.map((product) => {
                 return (
                     <article>
-                    <h2>{product.title}</h2>
-                    <p>{product.price}€</p>                    
+                        {product.isPublished ? (
+                            <>
+                            <h2>{product.title}</h2>
+                            <p>{product.price}</p>
+                            </>
+                        ) 
+                        : 
+                        (
+                            <>
+                            <p>Rien à afficher</p>
+                            </>
+                        )
+                        }
                     </article>
-                );
-            })}
-          
-        
+                        )
+            })}  
         </div>  
     )
 } 
