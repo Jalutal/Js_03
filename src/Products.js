@@ -20,18 +20,12 @@ function Products() {
             {products.map((product) => {
                 return (
                     <article>
-                        {product.isPublished ? (
+                        {product.isPublished && (
                             <>
                             <h2>{product.title}</h2>
                             <p>{product.price}</p>
                             </>
-                        ) 
-                        : 
-                        (
-                            <>
-                            <p>Rien à afficher</p>
-                            </>
-                        )
+                        )                         
                         }
                     </article>
                         )
