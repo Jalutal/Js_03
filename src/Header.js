@@ -1,3 +1,4 @@
+const userLogged = true /* ou false, variable pour tester l'user */
 
 function Header() {
     return (
@@ -7,7 +8,12 @@ function Header() {
             <ul>
                 <li>Accueil</li>
                 <li>Home</li>                
-                <li>Contact</li>
+                <li>Contact</li>               
+                { userLogged ? 
+                    (<li>Bonjour User !</li>)
+                :
+                    (<li>Bonjour, connecte toi !</li>)
+                }
             </ul>
         </nav>
         </header>
