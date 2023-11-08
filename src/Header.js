@@ -1,5 +1,10 @@
 function Header() {
-    const userLogged = true /* ou false, variable pour tester l'user */
+    const user = {
+        firstname: "Jesse",
+        lastname: "Granier",
+        job: "Baby Dev (on commence un jour...)"
+    }
+    const userLogged = true
     const itemsInCart = 2 /* ou 0 pour tester la variable des items dans le panier */ 
     return (
         <header>
@@ -7,10 +12,10 @@ function Header() {
         <nav>
             <ul>
             { userLogged ? 
-                    (<li>Bonjour User !</li>)
+                    (<li>Bonjour {user.firstname} {user.lastname} ! Tu es un {user.job} c'est ça ?</li>)
                 :
                     (<li>Bonjour, connecte toi !</li>)
-                }
+            }
                 <li>Accueil</li>
                 <li>Home</li>                
                 <li>Contact</li>  
