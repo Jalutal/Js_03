@@ -22,8 +22,8 @@ function Products() {
                     <article>
                         {product.isPublished && (
                             <>
-                            <h2>{product.title}</h2>
-                            <p>{product.price}</p>
+                                <h2>{product.title}</h2>
+                                <p>{product.price}</p>
                             </>
                         )                         
                         }
