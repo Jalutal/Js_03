@@ -1,6 +1,5 @@
-const userLogged = true /* ou false, variable pour tester l'user */
-
 function Header() {
+    const userLogged = true /* ou false, variable pour tester l'user */
     return (
         <header>
         <h1>Mon super Header qui déchire</h1>
@@ -19,5 +18,4 @@ function Header() {
         </header>
     )
 }
-
 export default Header;
