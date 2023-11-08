@@ -1,18 +1,16 @@
 function Products() {
+    const products = [ "Pikachu", "Salamèche", "Chris de la Piscine"]
     return (   
         <div>     
-        <p>Je suis les Products. T'as vu comme je suis canon !</p>  
-        <ul>
-            <li>
-                Premier product bidon
-            </li>
-            <li>
-                Second product encore plus bidon
-            </li>
-            <li>
-                Troisième product bidonné mais très, très fort
-            </li>
-        </ul>   
+            {products.map((product) => {
+                return (
+                    <article>
+                    <h2>{product}</h2>
+                    </article>
+                );
+            })}
+          
+        
         </div>  
     )
 } 
